@@ -1,0 +1,62 @@
+/* ARCHIVO INDEX.PHP */
+.formulario {
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 1rem 1rem;
+    padding: 1rem 1rem;
+    margin: auto;
+}
+
+.titulo{
+    border-bottom: 1px solid rgb(156, 156, 156);
+    padding-bottom: 1rem;
+}
+
+.seccion-articulos{
+    margin-top: 5rem;
+}
+
+.articulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.articulo label {
+    width: 100px;
+    margin-right: 10px; 
+}
+
+.articulo input {
+    flex: 1; /* Hace que el input ocupe el espacio restante */
+}
+
+.boton-articulo{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.boton{
+    border-radius: .3rem .3rem;
+    border: 1px solid gray;
+    margin-top: 1.5rem;
+    padding: .2rem .5rem;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: rgb(123, 170, 161);
+}
+
+/* ARCHIVO CUENTA.PHP */
+
+.seccion{
+    width: 50%;
+    border: 1px solid gray;
+    margin: auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem 1rem;
+    box-shadow: 1px 1px 1px black;
+}
+

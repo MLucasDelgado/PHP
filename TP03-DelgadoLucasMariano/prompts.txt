@@ -1,0 +1,14 @@
+Hola, actua como un programador experimentado en html, css y bootstrap para la siguiente tarea:
+
+Crea una página web, utilizando las estructuras semanticas correctas en html (es decir, no usar la etiqueta div), que la página contenga un
+header con un titulo (h1), un nav para navegar a traves de la pagina, un main que contenga a un section en donde dentro de este section estara el contenido de la página, y un footer al terminar la pagina.
+
+Para estilizar la pagina utilizaremos exclusivamente las clases de bootstrap, quiero que el header y el nav tengan un color negro con un texto blanco, que la etiqueta 
+body ocupe todo el alto de la pantalla sea de color blanco, que el section tenga un borde redondeado, un color entre azul y violeta con texto negro y 
+por ultimo que el footer sea de un color azul oscuro con texto blanco.
+
+Centra todo el contenido de la página tanto en lo ancho como en lo alto.
+
+Con la clase de bootstrap dale tamaños un poco mas grande a las etiquetas p.
+
+Gracias.

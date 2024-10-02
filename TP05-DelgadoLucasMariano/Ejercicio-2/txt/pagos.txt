@@ -1,0 +1,5 @@
+
+Angie;7;Mañana;Lunes;28000
+Angie;7;Mañana;Martes;28000
+Angie;7;Mañana;Jueves;28000
+Angie;7;Mañana;Viernes;28000

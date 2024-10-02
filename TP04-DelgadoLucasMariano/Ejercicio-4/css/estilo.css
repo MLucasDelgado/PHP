@@ -1,0 +1,44 @@
+/* ARCHIVO INDEX.PHP */
+.formulario {
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 1rem 1rem;
+    padding: 1rem 1rem;
+    margin: auto;
+}
+
+.titulo{
+    border-bottom: 1px solid rgb(156, 156, 156);
+    padding-bottom: 1rem;
+}
+
+.dinero{
+    width: 100%;
+    margin-top: .5rem;
+}
+
+.borde-radio{
+    border: 1px solid gray;
+}
+
+.boton{
+    border-radius: .3rem .3rem;
+    border: 1px solid gray;
+    margin-top: .6rem;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: rgb(123, 170, 161);
+}
+
+/* ARCHIVO GANANCIAS.PHP */
+
+.seccion{
+    width: 50%;
+    border: 1px solid gray;
+    margin: auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem 1rem;
+    box-shadow: 1px 1px 1px black;
+}

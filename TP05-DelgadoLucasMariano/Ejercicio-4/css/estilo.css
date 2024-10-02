@@ -1,0 +1,56 @@
+/* ARCHIVO INDEX.PHP*/
+.formulario {
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 1rem 1rem;
+    padding: 1rem 1rem;
+    margin: auto;
+}
+
+.dias {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dias article {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 200px;
+}
+
+.semana{
+    margin-left: .5rem;
+}
+
+.boton{
+    border-radius: .3rem .3rem;
+    border: 1px solid gray;
+    margin-top: 1rem;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: rgb(123, 170, 161);
+}
+
+/* ARCHIVO PROCESA.PHP*/
+
+.seccion{
+    margin: auto;
+    width: 40%;
+    border: 1px solid gray;
+    padding: 2rem 2rem;
+}
+
+.tabla {
+    border-spacing: 10px; /* Ajusta el espacio entre las celdas según sea necesario */
+    border: 1px solid gray;
+    margin: auto;
+}
+.tabla td, .tabla th {
+    padding: 10px; /* Espacio interno de celdas, ajusta según tus necesidades */
+    border: 1px solid gray;
+    text-align: center;
+}
