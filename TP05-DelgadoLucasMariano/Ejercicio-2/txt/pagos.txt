@@ -3,3 +3,12 @@ Angie;7;Mañana;Lunes;28000
 Angie;7;Mañana;Martes;28000
 Angie;7;Mañana;Jueves;28000
 Angie;7;Mañana;Viernes;28000
+Lucas;7;Nocturno;Lunes;35840
+Lucas;7;Nocturno;Martes;35840
+Lucas;7;Nocturno;Miercoles;35840
+Lucas;7;Nocturno;Viernes;35840
+Lucas;4;Mañana;Martes;16000
+Lucas;4;Mañana;Miercoles;16000
+Lucas;4;Mañana;Jueves;16000
+Lucas;4;Mañana;Viernes;16000
+Lucas;4;Mañana;Sabado;17920

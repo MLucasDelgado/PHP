@@ -29,7 +29,7 @@ require_once("funciones.php");
         }
     } else {
         header('refresh:3 ; url = ../index.php');
-        echo 'Faltan datos en el formulario, por favor llene todos los campos.';
+        echo '<p>Faltan datos en el formulario, por favor llene todos los campos.</p>';
     }
     ?>
 </section>
