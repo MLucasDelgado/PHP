@@ -4,49 +4,62 @@
     $naipe1 = mt_rand(1, 12);
     $naipe2 = mt_rand(1, 12);
 
-    function obtenerValor($carta) {
-        if ($carta >= 10) {
-            return 0.5;
-        }
-        return $carta;
+    // Obtener valor de naipe1
+    if ($naipe1 >= 10) {
+        $valor1 = 0.5;
+    } else {
+        $valor1 = $naipe1;
     }
 
-    $valor1 = obtenerValor($naipe1);
-    $valor2 = obtenerValor($naipe2);
+    // Obtener valor de naipe2
+    if ($naipe2 >= 10) {
+        $valor2 = 0.5;
+    } else {
+        $valor2 = $naipe2;
+    }
+
     $total = $valor1 + $valor2;
 
-    function obtenerNombre($carta) {
-        switch($carta) {
-            case 10:
-                $respuesta = "Sota";
-                echo '<strong>' .$respuesta. '</strong>';
+    // Mostrar el nombre o valor del primer naipe
+    echo '<p>Naipe 1: <strong>';
+    switch($naipe1) {
+        case 10:
+            echo "Sota";
             break;
-            case 11:
-                $respuesta = "Caballo";
-                echo '<strong>' .$respuesta. '</strong>';
+        case 11:
+            echo "Caballo";
             break;
-            case 12:
-                $respuesta = "Rey";
-                echo '<strong>' .$respuesta. '</strong>';
+        case 12:
+            echo "Rey";
             break;
-            default:
-                return $carta;
-        }
+        default:
+            echo $naipe1;
     }
-?>
+    echo '</strong></p>';
 
-<section class="mx-3">
-    <p>Naipe 1: <strong><?php echo obtenerNombre($naipe1); ?></strong></p>
-    <p>Naipe 2: <strong><?php echo obtenerNombre($naipe2); ?></strong></p>
-    <?php
-         if ($total == 9.5) {
-            echo "<p>GANADOR</p>";
-        } else {
-            echo "<p>Puntos obtenidos: " .$total. "</p>";
-        }
-    ?>
-</section>
+    // Mostrar el nombre o valor del segundo naipe
+    echo '<p>Naipe 2: <strong>';
+    switch($naipe2) {
+        case 10:
+            echo "Sota";
+            break;
+        case 11:
+            echo "Caballo";
+            break;
+        case 12:
+            echo "Rey";
+            break;
+        default:
+            echo $naipe2;
+    }
+    echo '</strong></p>';
 
-<?php
+    // Evaluar si el total es ganador
+    if ($total == 9.5) {
+        echo "<p>GANADOR</p>";
+    } else {
+        echo "<p>Puntos obtenidos: " .$total. "</p>";
+    }
+
     require_once('php/footer.php');
 ?>

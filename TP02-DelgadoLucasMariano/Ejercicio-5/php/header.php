@@ -12,6 +12,6 @@
     </header>
 
     <main class="flex-grow-1 bg-white py-5">
-        <section class="bg-primary text-dark py-4 m-4 rounded d-flex flex-column">
+        <section class="bg-primary text-dark py-4 m-4 px-4 rounded d-flex flex-column">
             <h2 class="text-center">Juego 9 y ½:</h2>
     
