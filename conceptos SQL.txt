@@ -1,0 +1,42 @@
+1 Preparar la consulta:
+$sentenciaFoto = mysqli_prepare($conexion, $consultaFoto);
+
+* mysqli_prepare prepara una consulta SQL para su ejecución en la base de datos.
+* $conexion es el recurso que representa la conexión activa a la base de datos.
+* $consultaFoto contiene la consulta SQL que queremos ejecutar, en este caso:
+
+SELECT foto FROM articulo WHERE id_articulo = ?
+Esta consulta selecciona el campo foto de la tabla articulo para un artículo específico cuyo ID (id_articulo) coincida con el valor proporcionado.
+La ? en la consulta es un marcador de posición que indica dónde se insertará un valor específico, lo que ayuda a prevenir ataques de inyección SQL
+al evitar el uso de valores directamente en la consulta.
+
+2 Vincular el parámetro:
+mysqli_stmt_bind_param($sentenciaFoto, 'i', $id);
+
+mysqli_stmt_bind_param vincula el valor de la variable $id con el marcador ? en la consulta.
+'i' indica el tipo de dato del parámetro (i para entero, s para cadena de texto, d para decimal).
+$id es el ID del artículo que queremos seleccionar. Este valor reemplazará al ? en la consulta cuando se ejecute.
+
+3 Ejecutar la consulta:
+mysqli_stmt_execute($sentenciaFoto);
+
+mysqli_stmt_execute ejecuta la consulta preparada con el parámetro vinculado.
+En este paso, la consulta SELECT foto FROM articulo WHERE id_articulo = ? se ejecuta en la base de datos con el valor de $id reemplazando al ?,
+seleccionando el campo foto para el artículo correspondiente.
+
+4 Vincular el resultado:
+mysqli_stmt_bind_result($sentenciaFoto, $fotoAnterior);
+
+mysqli_stmt_bind_result vincula el resultado de la consulta con una variable, en este caso, $fotoAnterior.
+Esto significa que, una vez que se ejecute y obtenga el resultado de la consulta, el valor de foto se almacenará en la variable $fotoAnterior
+para su uso posterior en el script.
+
+5 Obtener el resultado:
+mysqli_stmt_fetch($sentenciaFoto);
+
+mysqli_stmt_fetch recupera la fila de resultados y asigna el valor a la variable vinculada ($fotoAnterior).
+Después de ejecutar esta línea, $fotoAnterior contendrá el nombre del archivo de la imagen asociada al artículo, si es que existe en la base de datos.
+
+Resumen de todo el fragmento
+Este fragmento recupera el nombre del archivo de imagen asociado al artículo cuyo ID se ha proporcionado en $id. 
+Después, este nombre se utiliza para verificar si la imagen debe eliminarse o si hay que hacer algo más con ella.
