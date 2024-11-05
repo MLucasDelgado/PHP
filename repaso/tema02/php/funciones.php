@@ -16,19 +16,19 @@
 
         switch($tipo) {
             case 'Super':
-                $totalAPagar = 240.5 * $litros;
+                $totalAPagar = $costos[$tipo] * $litros;
             break;
 
             case 'Premium':
-                $totalAPagar = 308.7 * $litros;
+                $totalAPagar = $costos[$tipo] * $litros;
             break;
 
             case 'Gasoil':
-                $totalAPagar = 258.4 * $litros;
+                $totalAPagar = $costos[$tipo] * $litros;
             break;
 
             case 'Euro':
-                $totalAPagar = 352.7 * $litros;
+                $totalAPagar = $costos[$tipo] * $litros;
             break;
         }
 
